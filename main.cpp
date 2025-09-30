@@ -94,7 +94,7 @@ void waitForEnter() {
 
 bool borrowFlow(Book books[], int n) {
     string rawInput;
-    cout << "Enter Title or ISBN to return. Enter 0 to cancel: ";
+    cout << "Enter Title or ISBN to borrow. Enter 0 to cancel: ";
     getline(cin >> ws, rawInput);
     string input = normalizeISBN(rawInput);
     if (input == "0") return false;
@@ -166,4 +166,3 @@ int main() {
     }
     return 0;
 }
-
